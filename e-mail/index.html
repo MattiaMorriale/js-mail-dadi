@@ -13,16 +13,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="row mt-5 ">
+        <div class="row mt-5 d-flex justify-content-center">
             <strong class="text-center py-3" id="title">E-mail</strong>
             <form>
+                <label for="exampleInputEmail1" class="form-label fs-3">Inserisci la tua mail</label>
                 <div class="mb-3 d-flex flex-column align-items-center ">
-                  <label for="exampleInputEmail1" class="form-label fs-3">Inserisci la tua mail</label>
-                  <input type="email" class="form-control shadow-none " id="inmail">
-                  <div id="emailHelp" class="mt-3 "><strong>La tua E-mail non è stata trovata</strong></div>
+                  <input type="email" class="form-control shadow-none" id="inmail">
+                </div>
+                <div class="mt-3">
+                    <strong class="text-primary" id="emailsuccess"></strong>
+                    <strong class="text-danger" id="emailerror"></strong>
                 </div>
             </form>
-            <button type="submit" class="btn btn-primary my-4" id="submit">Invia</button>
+            <button type="submit" class="btn btn-primary my-4 w-auto " id="submit">Invia</button>
         </div>
     </div>
 

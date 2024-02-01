@@ -1,13 +1,32 @@
 // dobbiamo chiedere all'utente la sua email..
-const inmailElement = document.querySelector("#inmail");
-let mails = ["pippo@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "paperino@gmail.com", "qui@gmail.com", "quo@gmail.com", "qua@gmail.com"];
-
 const submitElement = document.querySelector("#submit");
+
+const inmailElement = document.querySelector("#inmail");
 
 submitElement.addEventListener("click", 
     function (){
+        let mails = ["pippo@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "paperino@gmail.com", "qui@gmail.com", "quo@gmail.com", "qua@gmail.com"];
+
+        let verifica = false;
+
         for (let i = 0; i < mails.length ; i++){
             console.log(mails[i])
+
+            if (inmailElement === mails[i]){
+
+                verifica = true;
+
+            }
+        }
+
+        if (verifica) {
+
+            document.getElementById("emailsuccess").innerHTML = ("La tua E-mail è presente nel nostro cloud")
+
+        } else {
+
+            document.getElementById("emailsuccess").innerHTML = ("La tua E-mail non è stata trovata, prego registrati")
+
         }
     }
 )
