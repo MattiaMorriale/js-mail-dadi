@@ -1,13 +1,13 @@
 // dobbiamo chiedere all'utente la sua email..
-const mailElement = document.querySelector("#mail");
-mailElement = ["pippo@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "paperino@gmail.com", "qui@gmail.com", "quo@gmail.com", "qua@gmail.com"];
+const inmailElement = document.querySelector("#inmail");
+let mails = ["pippo@gmail.com", "pluto@gmail.com", "topolino@gmail.com", "paperino@gmail.com", "qui@gmail.com", "quo@gmail.com", "qua@gmail.com"];
 
 const submitElement = document.querySelector("#submit");
 
 submitElement.addEventListener("click", 
     function (){
-        for (let i = 0; i < 6; i++){
-            console.log(i)
+        for (let i = 0; i < mails.length ; i++){
+            console.log(mails[i])
         }
     }
 )
