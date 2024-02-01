@@ -14,27 +14,29 @@
 <body>
     <div class="container py-5">
         <div class="row">
-            <div class="col-6 d-flex justify-content-center">
-                <div id="finalC">
+            <div class="col-6 d-flex flex-column align-items-center gap-3 ">
+                <strong class="fs-1 " >Utente</strong>
+                <div class="d-flex align-items-center justify-content-center" id="chose">
 
                 </div>
             </div>
-            <div class="col-6">
-                <div id="computer">
+            <div class="col-6 d-flex flex-column align-items-center gap-3 ">
+                <strong class="fs-1 " >Computer</strong>
+                <div class="d-flex align-items-center justify-content-center" id="computer">
 
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center flex-column gap-3 ">
-                <h1 class="fs-3 text-center">Scegli un numero da 1 a 6</h1>
-                <input class="w-25 text-center" type="number" id="chose">
-                <input class="w-25" type="button" value="Giochiamo!!" id="play">
+                <strong class="fs-3 text-center">Vince chi ottiene il numero più alto!!</strong>
+                <input class="btn border-0 text-light w-25 mt-4 " type="button" value="Giochiamo!!" id="play">
+                <input class="btn border-0 text-light w-25 mt-4 " type="button" value="Gioca Ancora!!" id="reload">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <h1 id="risultato"></h1>
+        <div class="row mt-5 ">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <strong class="text-light" id="risultato"></strong>
             </div>
         </div>
     </div>

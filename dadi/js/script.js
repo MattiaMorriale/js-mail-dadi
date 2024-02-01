@@ -1,25 +1,30 @@
-const choseElement = document.querySelector("#chose");
+
+// dichiariamo le nostre costanti
+// prendiamo le due costanti chose e computer che ci daranno dei numeri casuali
+const chose = Math.floor(Math.random() * 6+1);
 
 const playElement = document.querySelector("#play")
 
 const computer = Math.floor(Math.random() * 6+1);
 
-const finalCElement = document.querySelector("#finalC")
+const realoadElement = document.querySelector("#reload");
 
-
+// avviamo un addeventlistener per il bottone che ci permetterà di giocare
+// i numeri generati sono randomici
 playElement.addEventListener("click",
 
+    // prendiamo una funzione che si avvierà al click del pulsante
     function () {
-        let valore_scelta_utente =choseElement.value;
-        finalCElement.innerHTML = valore_scelta_utente;
+        document.getElementById("chose").innerHTML = chose;
 
         document.getElementById("computer").innerHTML = computer;
-    
-        if (valore_scelta_utente == computer) {
+        
+        // questo if determina il rapporto tra i numeri usciti
+        if (chose == computer) {
         
             document.getElementById("risultato").innerHTML = ("Pareggio");
         
-        } else if (valore_scelta_utente > computer){
+        } else if (chose > computer){
             
             document.getElementById("risultato").innerHTML = ("Hai Vinto")
         
@@ -27,6 +32,18 @@ playElement.addEventListener("click",
         
             document.getElementById("risultato").innerHTML = ("Hai Perso")
         
+        }
+
+        // ci chiamiamo un altro bottone che apparirà quando premeremo il pulsante play
+        playElement.style.display = "none"
+        
+        realoadElement.style.display = "block";
+        
+        realoadElement.addEventListener("click", reload)
+
+        // avviamo una funzione per il pulsante reload che ci permettera di giocare ancora
+        function reload() {
+            window.location.reload();
         }
 
     }
