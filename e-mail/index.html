@@ -22,10 +22,59 @@
                 </div>
                 <div class="mt-3">
                     <strong class="text-primary" id="emailsuccess"></strong>
-                    <strong class="text-danger" id="emailerror"></strong>
+                    <strong class="text-danger " id="emailerror"></strong>
                 </div>
             </form>
             <button type="submit" class="btn btn-primary my-4 w-auto " id="submit">Invia</button>
+            <button type="submit" class="btn btn-success my-4 w-auto " id="avanti">Avanti</button>
+            <button class="btn btn-danger w-auto my-4  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="registrati">Regitrati</button>
+
+            <div class="offcanvas offcanvas-end w-75" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="row mt-4 px-3 ">
+                    <div class="col px-2  ">
+                      <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                    </div>
+                    <div class="col px-2  ">
+                      <input type="text" class="form-control" placeholder="Cognome" aria-label="Last name">
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Stato</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Non sono un robot
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Crea</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
