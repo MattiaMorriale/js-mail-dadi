@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(33, 75, 100);
+}
+
+#title{
+    font-size: 60px;
+}
+
+#mail{
+    width: 30%;
+}
+
